@@ -110,7 +110,8 @@ a {
 
 /* hero */
 .hero {
-    padding-top: 80px;
+    padding: 80px 0 87px;
+    margin-bottom: 42px;
 }
 
 .hero__container {
@@ -263,4 +264,35 @@ a {
 .hero__flower--down {
     bottom: -62px;
     right: 3px;
+}
+
+/* brand */
+.brand-logo {
+    margin-bottom: 53px;
+}
+
+.brand-logos__container {
+    display: flex;
+    align-items: center;
+    padding: 76px 121px;
+    background-color: #E2EDDF;
+    border-radius: 999px;
+}
+
+.brand-logo__google {
+    margin-right: 47px;
+}
+
+.brand-logo__slack {
+    margin-right: 51px;
+}
+
+.brand-logo__discord {
+    color: #163C35;
+    font-size: 26px;
+    margin-left: 11px;
+}
+
+.brand-logo__riotinto {
+    margin: 0 63px;
 }
