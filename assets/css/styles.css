@@ -384,6 +384,7 @@ a {
     border: none;
     background-color: #E2EDDF;
     color: #152427;
+    transition: all .3s ease;
 }
 
 .service__btn--circle:hover {
@@ -570,8 +571,7 @@ a {
 }
 
 .about-us__loading-text {
-    width: fit-content;
-    margin-left: auto;
+    text-align: end;
     color: var(--Primary-color-black);
     font-family: "Public Sans";
     font-size: 1rem;
@@ -925,4 +925,124 @@ a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.715;
+}
+
+/* blog */
+.blog {
+    padding: 92px 0 102px;
+}
+
+.blog__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.blog__sub-heading {
+    top: 12px;
+    margin-bottom: 10px;
+}
+
+.blog__heading {
+    width: 45.62%;
+}
+
+.blog__heading::after {
+    width: 82px;
+    height: 3px;
+    right: -52px;
+}
+
+.blog__desc {
+    width: 35.88%;
+    color: #7D8188;
+
+    font-weight: 500;
+    line-height: 1.625;
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blog__article:hover .blog__item-info {
+    padding-left: 30px;
+    padding-bottom: 13px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+
+.blog__article:hover .blog__item-img {
+    transform: scale(1.05);
+}
+
+.blog__article:hover .block__category {
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.blog__article-link {
+    display: block;
+    overflow: hidden;
+}
+
+.blog__item-img {
+    display: block;
+    width: 100%;
+    height: 317px;
+    object-fit: cover;
+    border-radius: 40px 40px 0px 0px;
+    transition: all .4s ease;
+}
+
+.blog__item-info {
+    padding-top: 26px;
+    transition: all .3s ease;
+}
+
+.block__category {
+    display: inline-block;
+    width: 107px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: #E2EDDF;
+
+    color: #000;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px;
+
+    margin-bottom: 13px;
+    transition: all .3s ease;
+}
+
+.blog__item-title {
+    color: var(--Primary-color-black-green, #143C3C);
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.667;
+    margin-bottom: 38px;
+}
+
+.blog__item-separate {
+    width: 94%;
+    height: 1px;
+    background: #C4C4C4;
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+.blog__item-time {
+    color: #575D5E;
+
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: end;
+    margin-right: 22px;
 }
